@@ -112,7 +112,7 @@ class Redvine
       response['error'] = true
       return Hashie::Mash.new(response)
     else
-      records ? Hashie::Mash.new(response).data.records : Hashie::Mash.new(response).data
+      Hashie::Mash.new(response).data
     end
   end
 
